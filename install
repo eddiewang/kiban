@@ -5,7 +5,7 @@ REPO="us-central1-npm.pkg.dev/kiban-1751604499137/kiban"
 SCOPE="@tenki"
 
 # fresh 60-min access token every run
-TOKEN="$(gcloud auth print-access-token)" # uses user's gcloud creds :contentReference[oaicite:1]{index=1}
+TOKEN="$(gcloud auth print-access-token)" # uses user's gcloud creds
 
 TMP=$(mktemp)
 trap 'rm -f "$TMP"' EXIT
